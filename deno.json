@@ -1,8 +1,9 @@
 {
   "tasks": {
-    "dev": "deno run --watch src/main.ts"
+    "dev": "deno run --allow-net --watch src/main.ts"
   },
   "imports": {
+    "@std/http": "jsr:@std/http@^1.0.10",
     "@std/random": "jsr:@std/random@^0.1.0"
   }
 }

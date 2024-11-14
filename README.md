@@ -9,14 +9,17 @@ This is a random number guessing game in the form of a backend server created us
 Path parameters: `N/A`
 
 JSON body parameters:
+
 ```json
 {
   "guess": 42
 }
 ```
+
 Example response:
+
 ```json
 {
-  "success": true
+  "isCorrect": true
 }
 ```
