@@ -15,7 +15,7 @@ const routes: Route[] = [
         const guess = body.guess;
         console.log("Request obtained with guess", guess);
         const result = { isCorrect: game.isGuessCorrect(guess) };
-        return new Response(JSON.stringify(result));
+        return new Response(JSON.stringify(result), { headers: { "Content-Type": "application/json" } });
       } catch (_e) {
         return new Response("Please provide a guess in the json body parameters", { status: 400 });
       }
